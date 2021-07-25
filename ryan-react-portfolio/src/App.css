@@ -1,0 +1,139 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+:root {
+  /* CSS HEX  from coolors.co*/
+  --xanadu: #637e6eff;
+  --royal-purple: #735290ff;
+  --black-chocolate: #191102ff;
+  --pastel-pink: #daa49aff;
+  --beige: #eaefd3ff;
+  }
+  
+  html {
+      font-size: 18px;
+      background-color: var(--beige);
+      line-height: 1.1rem;
+  }
+  
+  header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 6rem;
+      background-color: var(--xanadu);
+      box-shadow: 2rem 0 2rem  var(--black-chocolate);
+      margin-bottom: 6rem;
+  }
+  
+  header h1 {
+      padding-left: 3rem;
+      font-size: 3rem;
+      color: var(--beige);
+      font-family: 'Anton', sans-serif;
+  }
+  
+  nav {
+      padding-right: 3rem;
+  }
+  
+  nav a{
+      display: inline;
+      padding: 0.5rem;
+      color: var(--beige);
+      font-family: 'Shippori Mincho', serif;
+  }
+  
+  h2 {
+      font-size: 2rem;
+      margin-bottom: 5rem;
+      text-align: center;
+      color: var(--black-chocolate);
+      font-family: 'Rubik', sans-serif;
+  }
+  
+  img {
+      width: 12rem ;
+      height: 12rem;
+      margin: 1rem;
+  }
+  
+  section {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      box-shadow: 0 2rem 2rem   var(--black-chocolate);
+      margin: 6rem;
+      padding: 6rem;
+  }
+  
+  .biography {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+  }
+  
+  .biography img, .biography p {
+      padding: 1rem;
+      line-height: 1.2rem;
+      font-family: 'Shippori Mincho', serif;
+      color: var(--black-chocolate);
+  }
+  
+  .projects h3 {
+      position: relative;
+      left: 2rem;
+      font-size: 1.2rem;
+      color: var(--black-chocolate);
+      font-family: 'Rubik', sans-serif;
+  }
+  
+  .project:hover {
+      transition: .5s ease-in-out;
+      transform: scale(1.1);
+  }
+  .contact {
+      font-size: 1.2rem;
+  }
+  
+  .contact h3, .contact a {
+      padding: 1rem;
+      color: var(--black-chocolate);
+      font-family: 'Rubik', sans-serif;
+  }

@@ -1,0 +1,1 @@
+// static with link to pdf
