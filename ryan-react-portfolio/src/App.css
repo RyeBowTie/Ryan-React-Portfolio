@@ -50,13 +50,15 @@
       font-size: 18px;
       background-color: var(--beige);
       line-height: 1.1rem;
+      height: 100%;
   }
   
   header {
       display: flex;
+      flex-flow: row wrap;
       justify-content: space-between;
       align-items: center;
-      height: 6rem;
+      height: 8rem;
       background-color: var(--xanadu);
       box-shadow: 2rem 0 2rem  var(--black-chocolate);
       margin-bottom: 6rem;
@@ -70,7 +72,9 @@
   }
   
   nav {
-      padding-right: 3rem;
+    padding-right: 3rem;
+    display: flex;
+    flex-flow: row wrap;
   }
   
   nav a{
@@ -96,13 +100,47 @@
   
   section {
       display: flex;
-      flex-flow: row wrap;
+      flex-flow: column wrap;
       justify-content: space-around;
+      align-content: center;
       box-shadow: 0 2rem 2rem   var(--black-chocolate);
       margin: 6rem;
       padding: 6rem;
   }
+
+  form {
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+    justify-content: center; 
+  }
+
+  textarea {
+    height: 300px;
+  }
   
+  input {
+    margin: 10px;
+  }
+
+  button {
+    margin : 10px;
+  }
+
+  .footer {
+    height: 6rem;
+    background-color: var(--xanadu);
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .footer a {
+    background-color: var(--beige);
+    padding: 1rem;
+    margin: 3rem;
+  }
   .biography {
       display: flex;
       flex-flow: row wrap;
@@ -136,4 +174,37 @@
       padding: 1rem;
       color: var(--black-chocolate);
       font-family: 'Rubik', sans-serif;
+  }
+
+  @media only screen and (max-width: 600px) {
+    section {
+      padding: 1rem;
+      margin: 1rem;
+    }
+
+    img {
+      width: 66%;
+    }
+
+    .footer a {
+      margin: .5rem;
+    }
+
+    header {
+      height: fit-content;
+      justify-content: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    nav {
+      flex-direction: column;
+    }
+
+    form {
+      width: 100%;
+    }
   }
