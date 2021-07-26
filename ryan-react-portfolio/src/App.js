@@ -11,7 +11,7 @@ import Resume from './components/resume';
 
 import projects from './projectInfo';
 import resumePDF from './assets/ryan_odonohue_resume_2021.pdf'; 
-
+import skills from './skillsList';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('about');
@@ -24,7 +24,7 @@ function App() {
     } else if (currentPage === 'contact') {
       return <Contact/>
     } else if (currentPage === 'resume') {
-      return <Resume resume={resumePDF}/>
+      return <Resume resume={resumePDF} skills={skills}/>
     }
   };
 
