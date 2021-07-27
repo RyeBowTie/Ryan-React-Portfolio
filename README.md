@@ -1,4 +1,7 @@
 # Ryan-React-Portfolio
+https://ryebowtie.github.io/Ryan-React-Portfolio/
+
+https://github.com/RyeBowTie/Ryan-React-Portfolio
 
 # Description 
 
