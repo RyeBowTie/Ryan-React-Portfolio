@@ -6,6 +6,9 @@ const Resume = ({ resume, skills }) => {
     return(
         <section>
             <div>
+                <a href={resume} download="Ryan-O'Donohue-Resume.pdf">Resume</a>
+            </div>
+            <div>
                 <h2>Technical Skills</h2>
                 <ul>
                 {skills.technical.map(skill => (
@@ -21,10 +24,6 @@ const Resume = ({ resume, skills }) => {
                 ))}
                 </ul>
             </div>
-            <div>
-                <a href={resume} download="Ryan-O'Donohue-Resume.pdf">Resume</a>
-            </div>
-
         </section>
     )
 }

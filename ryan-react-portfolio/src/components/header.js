@@ -16,4 +16,3 @@ const Header = ({  handlePageChange }) => {
 
 export default Header;
 
-// changing css of nav links

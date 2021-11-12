@@ -10,7 +10,7 @@ import Contact from './components/contact';
 import Resume from './components/resume';
 
 import projects from './projectInfo';
-import resumePDF from './assets/ryan_odonohue_resume_2021.pdf'; 
+import resumePDF from './assets/resume.pdf'; 
 import skills from './skillsList';
 
 function App() {
